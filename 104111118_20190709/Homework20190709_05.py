@@ -8,9 +8,11 @@
 版本:1.0
 說明:
 """
-height = 7
-stars = 1
-for i in range(height):
-    print((' ' * (height - i)) + ('*' * stars))
-    stars += 2
-print((' ' * (height - i)) + ('*' * stars))
+for i in range(7):
+    print((' ' * 8) + '***')
+for i in range(10):
+    for j in range(0,i):
+        print(end=" ")
+    for j in range(i,10):
+        print("$",end=" ")
+    print("")
